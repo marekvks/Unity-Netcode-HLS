@@ -1,2 +1,1 @@
-# Unity-Netcode-HLS
-Netcode for gameobjects test project
+# **H**odně **L**ame **S**hooter (HLS)
