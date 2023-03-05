@@ -2534,7 +2534,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e78b34a2b670956459d6edb8022bb55a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxPlayers: 1
+  MaxPlayers: 2
   CreateLobbyNameTextIP: {fileID: 1811820190}
   JoinLobbyCodeTextIP: {fileID: 149543080}
   LobbyCodeText: {fileID: 16986214}
