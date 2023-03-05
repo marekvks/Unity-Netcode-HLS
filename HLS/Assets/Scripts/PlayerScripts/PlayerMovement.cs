@@ -28,7 +28,7 @@ namespace PlayerScripts
             _movementInput = _inputHandler.MovementInput;
             if (IsHost)
             {
-                //Move();
+                Move();
                 Rotate();
                 return;
             }
@@ -47,7 +47,10 @@ namespace PlayerScripts
 
         private void Move()
         {
-            _controller.Move(transform.forward * speed * Time.deltaTime);
+            Vector3 direction = transform.forward * _inputHandler.MovementInput.y +
+                                transform.right * _inputHandler.MovementInput.x;
+            if (_movementInput.magnitude >= 0.1f)
+                _controller.Move(direction * speed * Time.deltaTime);
         }
 
         [ServerRpc]
